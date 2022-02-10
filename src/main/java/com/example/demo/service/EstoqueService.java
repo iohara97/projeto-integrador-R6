@@ -3,6 +3,7 @@ package com.example.demo.service;
 import com.example.demo.dto.EstoqueSetorIdDataValidadeDTO;
 import com.example.demo.entity.Estoque;
 import com.example.demo.repository.EstoqueRepository;
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,6 +15,7 @@ import java.util.List;
  * Classe que contem a logica de negocio da entidade Estoque
  */
 @Service
+@AllArgsConstructor
 public class EstoqueService {
 
     @Autowired
@@ -48,3 +50,4 @@ public class EstoqueService {
         return EstoqueSetorIdDataValidadeDTO.converte(estoque);
     }
 }
+

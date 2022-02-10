@@ -39,7 +39,6 @@ public class Anuncio {
 
     @OneToMany(mappedBy="anuncio")
     @ToString.Exclude
-//    @JsonBackReference
     @JsonIgnoreProperties("anuncio")
     private Set<Estoque> estoques;
 
