@@ -65,12 +65,12 @@ public class CarrinhoControllerIntegrationTest {
                 "  \"status\": 1,\n" +
                 "  \"listaAnuncio\": [\n" +
                 "    {\n" +
-                "        \"id\": 12,\n" +
+                "        \"id\": 8,\n" +
                 "      \"anuncio_id\": 1,\n" +
                 "      \"quantidade\": 2\n" +
                 "    },\n" +
                 "    {\n" +
-                "        \"id\": 13,\n" +
+                "        \"id\": 9,\n" +
                 "      \"anuncio_id\": 2,\n" +
                 "      \"quantidade\": 4\n" +
                 "    }\n" +
