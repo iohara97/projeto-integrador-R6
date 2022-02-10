@@ -40,7 +40,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
                 .antMatchers(HttpMethod.POST, "/api/v1/auth").permitAll()
-                //.antMatchers("/api/v1/fresh-products/inboundorder/").hasAnyAuthority("Representante")
                 .antMatchers("/api/v1/fresh-products/").hasAnyAuthority("Comprador", "Vendedor", "Representante")
                 .antMatchers("/api/v1/fresh-products/list").hasAnyAuthority("Comprador", "Vendedor", "Representante")
                 .antMatchers("/api/v1/fresh-products/list/anuncio/*").hasAnyAuthority("Representante")
@@ -54,6 +53,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
                 .antMatchers(HttpMethod.GET,"/api/v1/fresh-products/warehouse/*").hasAnyAuthority("Representante")
                 .antMatchers("/api/v1/fresh-products/due-date").hasAnyAuthority("Representante")
                 .antMatchers("/api/v1/fresh-products/due-date/list").hasAnyAuthority("Representante")
+                .antMatchers("/api/v1/stock-report").hasAuthority("Representante")
                 .anyRequest().authenticated()
                 .and().csrf().disable()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)

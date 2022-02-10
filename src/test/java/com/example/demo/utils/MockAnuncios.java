@@ -3,6 +3,7 @@ package com.example.demo.utils;
 import com.example.demo.dto.EstoqueDTO;
 import com.example.demo.dto.InboundOrderDTO;
 import com.example.demo.dto.OrdemEntradaDTO;
+import com.example.demo.dto.RelatorioEstoqueDTO;
 import com.example.demo.entity.*;
 import com.example.demo.enums.Tipos;
 import com.example.demo.interfaces.CapacidadeSetor;
@@ -111,7 +112,7 @@ public class MockAnuncios {
         estoque1 = Estoque.builder()
                 .id(1L)
                 .dataProducao(LocalDateTime.of(2022, 1, 1, 12, 30))
-                .dataValidade(LocalDate.of(2022, 12, 1))
+                .dataValidade(LocalDate.of(2022, 2, 20))
                 .quantidadeAtual(100)
                 .quantidadeInicial(100)
                 .temperaturaAtual(20D)
@@ -177,6 +178,5 @@ public class MockAnuncios {
                 estoqueList.add(e);
             }
         }
-
     }
 }

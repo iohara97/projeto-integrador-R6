@@ -2,7 +2,6 @@ package com.example.demo.serviceTest;
 
 import com.example.demo.dto.EstoqueDTO;
 import com.example.demo.dto.InboundOrderDTO;
-import com.example.demo.dto.OrdemEntradaDTO;
 import com.example.demo.entity.*;
 import com.example.demo.interfaces.CapacidadeSetor;
 import com.example.demo.repository.AnuncioRepository;

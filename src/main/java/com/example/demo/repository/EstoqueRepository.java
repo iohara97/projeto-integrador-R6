@@ -1,7 +1,5 @@
 package com.example.demo.repository;
 
-import com.example.demo.dto.ListaArmazemDTO;
-import com.example.demo.entity.Anuncio;
 import com.example.demo.entity.Estoque;
 import com.example.demo.entity.OrdemEntrada;
 import com.example.demo.interfaces.ListaArmazemInterface;
@@ -11,7 +9,6 @@ import org.springframework.stereotype.Repository;
 
 import java.time.LocalDate;
 import java.util.List;
-import java.util.Set;
 
 @Repository
 public interface EstoqueRepository extends JpaRepository <Estoque, Long> {
