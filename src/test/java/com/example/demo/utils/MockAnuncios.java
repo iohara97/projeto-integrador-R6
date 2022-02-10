@@ -25,6 +25,7 @@ public class MockAnuncios {
     private Set<EstoqueDTO> estoqueSetDTO = new HashSet<>();
     private List<Anuncio> anuncios = new ArrayList<>();
     private Setor setor1;
+    private Armazem armazem1;
     private Estoque estoque1;
     private OrdemEntrada ordemEntrada1;
     private CapacidadeSetor capacidadeSetor;
@@ -89,7 +90,7 @@ public class MockAnuncios {
         produto1.setAnuncios(anunciosSet);
         vendedor1.setAnuncios(anunciosSet);
 
-        Armazem armazem1 = Armazem.builder()
+        armazem1 = Armazem.builder()
                 .id(1L)
                 .cep("01000-001")
                 .nome("CD_Guarulhos")
