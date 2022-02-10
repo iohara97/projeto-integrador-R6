@@ -10,6 +10,5 @@ com.example.demo.interfaces
 com.example.demo.repository
 com.example.demo.request
 com.example.demo.service
-com.example.demo.serviceTest
 com.example.demo.utils
 exception

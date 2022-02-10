@@ -38,6 +38,7 @@ public class RelatorioEstoqueService {
 
     /** Método para retornar um RelatorioEstoqueDTO
      * com estoqueMinimo definido no parametro da requisição
+     * @param estoqueMinimo (Integer)
      * @return (RelatorioEstoqueDTO) RelatorioEstoqueDTO personalizado com o estoque mínimo definido pelo cliente
      */
     public RelatorioEstoqueDTO getRelatorioEstoque(Integer estoqueMinimo) {
@@ -64,6 +65,8 @@ public class RelatorioEstoqueService {
 
     /** Método para retornar um RelatorioEstoqueDTO
      * com categoria e estoqueMinimo definidos no parametro da requisição
+     * @param categoria (String)
+     * @param estoqueMinimo (Integer)
      * @return (RelatorioEstoqueDTO) RelatorioEstoqueDTO personalizado com o estoque mínimo e tipo do anúncio definidos pelo cliente
      */
     public RelatorioEstoqueDTO getRelatorioEstoquePorCategoria(String categoria, Integer estoqueMinimo) {
@@ -95,6 +98,8 @@ public class RelatorioEstoqueService {
 
     /** Método para retornar um RelatorioEstoqueDTO
      * com setorId e estoqueMinimo definidos no parametro da requisição
+     * @param setorId (Long)
+     * @param estoqueMinimo (Integer)
      * @return (RelatorioEstoqueDTO) RelatorioEstoqueDTO personalizado com o estoque mínimo e id do setor definidos pelo cliente
      */
     public RelatorioEstoqueDTO getRelatorioEstoquePorSetor(Long setorId, Integer estoqueMinimo) {
@@ -125,6 +130,8 @@ public class RelatorioEstoqueService {
 
     /** Método para retornar um RelatorioEstoqueDTO
      * com armazemId e estoqueMinimo definidos no parametro da requisição
+     * @param armazemId (Long)
+     * @param estoqueMinimo (Integer)
      * @return (RelatorioEstoqueDTO) RelatorioEstoqueDTO personalizado com o estoque mínimo e id do armazem definidos pelo cliente
      */
     public RelatorioEstoqueDTO getRelatorioEstoquePorArmazem(Long armazemId, Integer estoqueMinimo) {
@@ -154,6 +161,8 @@ public class RelatorioEstoqueService {
     }
 
     /** Método para retornar um build de RelatorioEstoqueDTO
+     * @param produtosEstoqueBaixo (List<ProdutosEstoqueBaixoDTO>)
+     * @param produtosParaVencer (List<ProdutosParaVencerDTO>)
      * @return (RelatorioEstoqueDTO) RelatorioEstoqueDTO personalizado com uma lista de produtosEstoqueBaixo e produtosParaVencer
      */
     private RelatorioEstoqueDTO devolveBuildRelatorio(List<ProdutosEstoqueBaixoDTO> produtosEstoqueBaixo, List<ProdutosParaVencerDTO> produtosParaVencer) {
