@@ -1,8 +1,8 @@
 {
 	"info": {
-		"_postman_id": "ff1e88cf-baf3-4b20-968b-e2a36c4510ab",
+		"_postman_id": "70d56e26-6ee5-4e38-b9fd-be7dc7c2363a",
 		"name": "Projeto Integrado",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
 		{
@@ -22,18 +22,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "localhost:8080/api/v1/auth",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"v1",
-								"auth"
-							]
-						}
+						"url": "localhost:8080/api/v1/auth"
 					},
 					"response": [
 						{
@@ -50,18 +39,7 @@
 										}
 									}
 								},
-								"url": {
-									"raw": "localhost:8080/api/v1/auth",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"api",
-										"v1",
-										"auth"
-									]
-								}
+								"url": "localhost:8080/api/v1/auth"
 							},
 							"status": "OK",
 							"code": 200,
@@ -131,18 +109,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "localhost:8080/api/v1/auth",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"v1",
-								"auth"
-							]
-						}
+						"url": "localhost:8080/api/v1/auth"
 					},
 					"response": [
 						{
@@ -159,18 +126,7 @@
 										}
 									}
 								},
-								"url": {
-									"raw": "localhost:8080/api/v1/auth",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"api",
-										"v1",
-										"auth"
-									]
-								}
+								"url": "localhost:8080/api/v1/auth"
 							},
 							"status": "OK",
 							"code": 200,
@@ -236,13 +192,9 @@
 					"request": {
 						"auth": {
 							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "{{TOKEN_REPRESENTANTE}}",
-									"type": "string"
-								}
-							]
+							"bearer": {
+								"token": "{{TOKEN_REPRESENTANTE}}"
+							}
 						},
 						"method": "POST",
 						"header": [
@@ -256,19 +208,7 @@
 							"mode": "raw",
 							"raw": "{\n  \"ordemEntradaDTO\": {\n    \"dataCriacao\": \"2022-01-27T10:27:58.331085\",\n    \"setor_id\": 2\n  },\n  \"listaEstoqueDTO\": [\n      {\n        \"anuncio_id\": 2,\n        \"quantidadeInicial\": 2,\n        \"quantidadeAtual\": 3,\n        \"temperaturaAtual\": 4.0,\n        \"dataValidade\": \"2022-03-27\",\n        \"dataProducao\": \"2022-01-27T10:27:58.331085\"\n      }\n  ]\n}"
 						},
-						"url": {
-							"raw": "localhost:8080/api/v1/fresh-products/inboundorder",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"v1",
-								"fresh-products",
-								"inboundorder"
-							]
-						}
+						"url": "localhost:8080/api/v1/fresh-products/inboundorder"
 					},
 					"response": []
 				},
@@ -277,13 +217,9 @@
 					"request": {
 						"auth": {
 							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "{{TOKEN_REPRESENTANTE}}",
-									"type": "string"
-								}
-							]
+							"bearer": {
+								"token": "{{TOKEN_REPRESENTANTE}}"
+							}
 						},
 						"method": "PUT",
 						"header": [
@@ -297,33 +233,16 @@
 							"mode": "raw",
 							"raw": "{\n  \"ordemEntradaDTO\": {\n    \"dataCriacao\": \"2022-01-27T10:27:58.331085\",\n    \"setor_id\": 2\n  },\n  \"listaEstoqueDTO\": [\n      {\n        \"anuncio_id\": 2,\n        \"quantidadeInicial\": 5,\n        \"quantidadeAtual\": 2,\n        \"temperaturaAtual\": 4.0,\n        \"dataValidade\": \"2022-03-27\",\n        \"dataProducao\": \"2022-01-27T10:27:58.331085\"\n      }\n  ]\n}"
 						},
-						"url": {
-							"raw": "localhost:8080/api/v1/fresh-products/inboundorder/9",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"v1",
-								"fresh-products",
-								"inboundorder",
-								"9"
-							]
-						}
+						"url": "localhost:8080/api/v1/fresh-products/inboundorder/9"
 					},
 					"response": []
 				}
 			],
 			"auth": {
 				"type": "bearer",
-				"bearer": [
-					{
-						"key": "token",
-						"value": "{{TOKEN_REPRESENTANTE}}",
-						"type": "string"
-					}
-				]
+				"bearer": {
+					"token": "{{TOKEN_REPRESENTANTE}}"
+				}
 			},
 			"event": [
 				{
@@ -360,19 +279,7 @@
 								"type": "string"
 							}
 						],
-						"url": {
-							"raw": "localhost:8080/api/v1/fresh-products/",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"v1",
-								"fresh-products",
-								""
-							]
-						}
+						"url": "localhost:8080/api/v1/fresh-products/"
 					},
 					"response": []
 				},
@@ -425,19 +332,7 @@
 							"mode": "raw",
 							"raw": "{\n  \"dataCriacao\": \"2022-01-27T10:27:58.331085\",\n  \"comprador_id\": 1,\n  \"status\": 0,\n  \"listaAnuncio\": [\n    {\n      \"anuncio_id\": 1,\n      \"quantidade\": 2\n    },\n    {\n      \"anuncio_id\": 2,\n      \"quantidade\": 1\n    }\n  ]\n}"
 						},
-						"url": {
-							"raw": "localhost:8080/api/v1/fresh-products/orders",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"v1",
-								"fresh-products",
-								"orders"
-							]
-						}
+						"url": "localhost:8080/api/v1/fresh-products/orders"
 					},
 					"response": []
 				},
@@ -452,20 +347,7 @@
 								"type": "string"
 							}
 						],
-						"url": {
-							"raw": "localhost:8080/api/v1/fresh-products/orders/1",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"v1",
-								"fresh-products",
-								"orders",
-								"1"
-							]
-						}
+						"url": "localhost:8080/api/v1/fresh-products/orders/1"
 					},
 					"response": []
 				},
@@ -484,33 +366,16 @@
 							"mode": "raw",
 							"raw": "{\n  \"dataCriacao\": \"2022-01-27T10:27:58.331085\",\n  \"comprador_id\": 1,\n  \"status\": 1,\n  \"listaAnuncio\": [\n    {\n        \"id\": 12,\n      \"anuncio_id\": 1,\n      \"quantidade\": 2\n    },\n    {\n        \"id\": 13,\n      \"anuncio_id\": 2,\n      \"quantidade\": 1\n    }\n  ]\n}"
 						},
-						"url": {
-							"raw": "localhost:8080/api/v1/fresh-products/orders/11",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"v1",
-								"fresh-products",
-								"orders",
-								"11"
-							]
-						}
+						"url": "localhost:8080/api/v1/fresh-products/orders/11"
 					},
 					"response": []
 				}
 			],
 			"auth": {
 				"type": "bearer",
-				"bearer": [
-					{
-						"key": "token",
-						"value": "{{TOKEN_COMPRADOR}}",
-						"type": "string"
-					}
-				]
+				"bearer": {
+					"token": "{{TOKEN_COMPRADOR}}"
+				}
 			},
 			"event": [
 				{
@@ -547,21 +412,7 @@
 								"type": "string"
 							}
 						],
-						"url": {
-							"raw": "localhost:8080/api/v1/fresh-products/list/anuncio/1",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"v1",
-								"fresh-products",
-								"list",
-								"anuncio",
-								"1"
-							]
-						}
+						"url": "localhost:8080/api/v1/fresh-products/list/anuncio/1"
 					},
 					"response": []
 				},
@@ -607,13 +458,9 @@
 			],
 			"auth": {
 				"type": "bearer",
-				"bearer": [
-					{
-						"key": "token",
-						"value": "{{TOKEN_REPRESENTANTE}}",
-						"type": "string"
-					}
-				]
+				"bearer": {
+					"token": "{{TOKEN_REPRESENTANTE}}"
+				}
 			},
 			"event": [
 				{
@@ -650,33 +497,16 @@
 								"type": "string"
 							}
 						],
-						"url": {
-							"raw": "localhost:8080/api/v1/fresh-products/warehouse/1",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"v1",
-								"fresh-products",
-								"warehouse",
-								"1"
-							]
-						}
+						"url": "localhost:8080/api/v1/fresh-products/warehouse/1"
 					},
 					"response": []
 				}
 			],
 			"auth": {
 				"type": "bearer",
-				"bearer": [
-					{
-						"key": "token",
-						"value": "{{TOKEN_REPRESENTANTE}}",
-						"type": "string"
-					}
-				]
+				"bearer": {
+					"token": "{{TOKEN_REPRESENTANTE}}"
+				}
 			},
 			"event": [
 				{
@@ -773,13 +603,9 @@
 			],
 			"auth": {
 				"type": "bearer",
-				"bearer": [
-					{
-						"key": "token",
-						"value": "{{TOKEN_REPRESENTANTE}}",
-						"type": "string"
-					}
-				]
+				"bearer": {
+					"token": "{{TOKEN_REPRESENTANTE}}"
+				}
 			},
 			"event": [
 				{
@@ -810,13 +636,35 @@
 					"request": {
 						"auth": {
 							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "{{TOKEN_REPRESENTANTE}}",
-									"type": "string"
-								}
-							]
+							"bearer": {
+								"token": "{{TOKEN_REPRESENTANTE}}"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "string"
+							}
+						],
+						"url": "localhost:8080/api/v1/fresh-products/inboundorder/3"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "US06",
+			"item": [
+				{
+					"name": "US06 - Retornar Relatório de Estoque",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJOb3NzYSBBUFAiLCJzdWIiOiJsdWNpYW4iLCJpYXQiOjE2NDQ0MzQ1NDYsImV4cCI6MTY0NDUyMDk0Nn0.bUjR3Jl-6N2YjwVpccMRhndpIWkLpgFyA16p19QYXJg"
+							}
 						},
 						"method": "GET",
 						"header": [
@@ -827,7 +675,7 @@
 							}
 						],
 						"url": {
-							"raw": "localhost:8080/api/v1/fresh-products/inboundorder/3",
+							"raw": "localhost:8080/api/v1/stock-report?estoqueMinimo=100",
 							"host": [
 								"localhost"
 							],
@@ -835,9 +683,124 @@
 							"path": [
 								"api",
 								"v1",
-								"fresh-products",
-								"inboundorder",
-								"3"
+								"stock-report"
+							],
+							"query": [
+								{
+									"key": "estoqueMinimo",
+									"value": "100"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "US06 - Retornar Relatório de Estoque por categoria",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJOb3NzYSBBUFAiLCJzdWIiOiJsdWNpYW4iLCJpYXQiOjE2NDQ0MzQ1NDYsImV4cCI6MTY0NDUyMDk0Nn0.bUjR3Jl-6N2YjwVpccMRhndpIWkLpgFyA16p19QYXJg"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/stock-report/filterCategory?categoria=congelado&estoqueMinimo=200",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"stock-report",
+								"filterCategory"
+							],
+							"query": [
+								{
+									"key": "categoria",
+									"value": "congelado"
+								},
+								{
+									"key": "estoqueMinimo",
+									"value": "200"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "US06 - Retornar Relatório de Estoque por Setor",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJOb3NzYSBBUFAiLCJzdWIiOiJsdWNpYW4iLCJpYXQiOjE2NDQ0MzQ1NDYsImV4cCI6MTY0NDUyMDk0Nn0.bUjR3Jl-6N2YjwVpccMRhndpIWkLpgFyA16p19QYXJg"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/stock-report/filterSector?setorId=2&estoqueMinimo=200",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"stock-report",
+								"filterSector"
+							],
+							"query": [
+								{
+									"key": "setorId",
+									"value": "2"
+								},
+								{
+									"key": "estoqueMinimo",
+									"value": "200"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "US06 - Retornar Relatório de Estoque por Armazem",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJOb3NzYSBBUFAiLCJzdWIiOiJsdWNpYW4iLCJpYXQiOjE2NDQ0MzQ1NDYsImV4cCI6MTY0NDUyMDk0Nn0.bUjR3Jl-6N2YjwVpccMRhndpIWkLpgFyA16p19QYXJg"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/stock-report/filterStorage?armazemId=1&estoqueMinimo=200",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"stock-report",
+								"filterStorage"
+							],
+							"query": [
+								{
+									"key": "armazemId",
+									"value": "1"
+								},
+								{
+									"key": "estoqueMinimo",
+									"value": "200"
+								}
 							]
 						}
 					},
