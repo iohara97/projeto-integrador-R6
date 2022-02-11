@@ -1,0 +1,23 @@
+1 - VALIDAR ARMAZEM *
+2 - VALIDAR SE ARMAZEM PERTENCE AO REPRESENTANTE -> AUTHENTICATION
+
+3 - VALIDAR N DE LOTE DO PRODUTO *
+4 - FILTRAR PRODUTO P/ N DE LOTE
+5 - FILTRAR PRODUTO P/ DATA VALIDADE
+6 - FILTRAR PRODUTO P/ CATEGORIA
+
+OBS: Data de validade não é obrigatório!
+
+
+CENÁRIO 1: um produto do vendedor é registrado
+DESDE o produto de um Vendedor é registrado
+E que o armazém é válido
+E que o representante pertence ao armazém
+QUANDO o representante insere o número de dias
+ENTÃO, uma lista de produtos é exibida com uma data de validade entre a data atual e a data futura
+(data atual + dias inseridos)
+E que o produto tem um número de lote
+E que o produto é filtrado por número de lote
+E que o produto é filtrado por data de validade
+E que o produto seja filtrado de acordo com a categoria dos produtos (frescos, congelados,
+refrigerados)
