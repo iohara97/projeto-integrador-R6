@@ -1,10 +1,10 @@
 # BOOTCAMP IT 13/12
 
-### Participantes do Grupo 10:
+### Requisito Final:
 
-| Lucian | Iohara | Ismael | Nathan |Vanessa|
-| :---: | :---: | :---: | :---: |:---: |
-| [<img src="https://avatars.githubusercontent.com/u/96140964?v=4?size=115" width=115><br><sub></sub>](https://github.com/lucianmoraes) |[<img src="https://avatars.githubusercontent.com/u/96189406?v=4?size=250" width=115><br>](https://github.com/iohara97) |[<img src="https://avatars.githubusercontent.com/u/96146651?v=4?size=250" width=115><br>](https://github.com/joseismaelrj) |[<img src="https://avatars.githubusercontent.com/u/96149473?v=4?size=250" width=115><br>](https://github.com/nkutomimeli) |[<img src="https://avatars.githubusercontent.com/u/96189951?v=4?size=250" width=115><br>](https://github.com/VanessaGomesOliveira) |
+| Iohara |
+| :---: |
+|[<img src="https://avatars.githubusercontent.com/u/96189406?v=4?size=250" width=115><br>](https://github.com/iohara97) |
 
 ## Projeto Final -  Mercado Livre Frescos
 
@@ -15,7 +15,7 @@ Qualidade e Segurança).
 
 Por meio dessa API, o usuário poderá:
 
-● Ser capaz de inserir um lote de produtos no armazém de distribuição para registrar
+c Ser capaz de inserir um lote de produtos no armazém de distribuição para registrar
 essa existência no estoque.
 
 ● Ter as informações necessárias para entender em que setor deve ser armazenada a
@@ -32,6 +32,48 @@ um produto específico, entender também em qual armazém ele está armazenado.
 ● Poder cadastrar o pedido de compra para que os colaboradores dentro do Fullfilment
 possam montar o (s) pedido (s) para despachá-los.
 
+## Requisito 6
+
+Pensando na necessidade de gestão de estoque, objetivo foi construir uma API para gerar relatórios com filtros.
+
+● Relatório baseado em produtos próximos da data de validade (21 dias).
+
+● Por meio de parâmetro, o cliente pode controlar o limite de estoque para conferência.
+
+● Relatório por categoria, setor e armazem.
+
+### Autenticação
+
+
+Autenticação como representante passada por Bearer Tokek necessária: 
+
+
+**[localhost:8080/api/v1/auth](localhost:8080/api/v1/stock-report?estoqueMinimo=100)**
+
+- Payload
+
+
+    {
+
+        "user": "lucian",
+
+        "senha": "12345"
+
+    }
+
+### Endpoints:
+
+● **[Retorna relatório de estoque simples](localhost:8080/api/v1/stock-report?estoqueMinimo=100)**
+
+● **[Retorna relatório de estoque por categoria](localhost:8080/api/v1/stock-report/filterCategory?categoria=congelado&estoqueMinimo=200)**
+
+● **[Retorna relatório de estoque por setor](localhost:8080/api/v1/stock-report/filterSector?setorId=2&estoqueMinimo=200)**
+
+● **[Retorna relatório de estoque por armazem](localhost:8080/api/v1/stock-report/filterStorage?armazemId=1&estoqueMinimo=200)**
+
+
+
+
 ## 🚀 Frameworks, Linguagens e Ferramentas
 
 ![java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
@@ -46,6 +88,6 @@ possam montar o (s) pedido (s) para despachá-los.
 
 #### * Para baixar as Coleções do Postman:
 
-[![PostMan](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white)](https://app.getpostman.com/run-collection/6803f5c6bc63844d9118?action=collection%2Fimport)
+[![PostMan](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white)](https://www.getpostman.com/collections/06888636d5bae5c4fb62)
 
 ###
