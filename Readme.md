@@ -45,7 +45,7 @@ Pensando na necessidade de gestão de estoque, objetivo foi construir uma API pa
 ### Autenticação
 
 
-Autenticação como representante passada por Bearer Tokek necessária: 
+Autenticação como representante passada por Bearer Token necessária: 
 
 
 **[localhost:8080/api/v1/auth](localhost:8080/api/v1/stock-report?estoqueMinimo=100)**
